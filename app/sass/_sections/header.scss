@@ -1,0 +1,101 @@
+.header {
+  min-height: 660px;
+  background-image: url('../img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  min-height: 60px;
+  background-color: rgba(#003935, .7);
+  margin-bottom: 60px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+.logo {
+  font-size: 0;
+  display: block;
+  width: 34%;
+}
+
+.logo-img {
+  display: block;
+  max-width: 100%;
+}
+
+.nav__list {
+  display: flex;
+  width: 66%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav__link {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    color: #2b8bb6;
+  }
+}
+
+.nav__link--tel {
+  @include RobotoCondensed(light);
+}
+
+.btn {
+  background-color: #f35303;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.85);
+  border-radius: 3px;
+  padding: 5px;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.header-content {
+  text-align: right;
+}
+
+.header-title {
+  text-align: center;
+  display: block;
+  @include CopyrightHouse();
+  font-size: 87px;
+  line-height: 105px;
+  color: #fff;
+  background-color: rgba(#000000, .6);
+  margin-bottom: 30px;
+}
+
+.price {
+  font-size: 30px;
+  @include RobotoCondensed(light);
+  background-color: $orange;
+  color: $white;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.header__desc-list {
+
+}
+
+.header__desc__item {
+  @include CopyrightHouse();
+  font-size: 45px;
+  color: $green;
+  background-color: rgba($white, .5);
+  margin-bottom: 30px;
+  margin-left: -80px;
+  max-width: 660px;
+  padding: 0 15px;
+}

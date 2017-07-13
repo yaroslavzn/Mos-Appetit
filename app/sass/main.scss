@@ -1,16 +1,17 @@
 @import "_misc/fonts";
 
 // adjustment variables
-$container-width: 940px;
-$body-font: sans-serif;
+$container-width: 1170px;
+$body-font: 'roboto_condensedregular', sans-serif;
 
 //colors
-
+$white: #fff;
+$orange: #f35303;
+$green: #003935;
 
 // layout
 @import "_misc/mixins";
 @import "_misc/adjustment";
 
 // styles
-
-
+@import "_sections/header"
