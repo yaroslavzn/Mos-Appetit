@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'roboto_condensedlight';
+    src: url('robotocondensed-light-webfont.eot');
+    src: url('robotocondensed-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('robotocondensed-light-webfont.woff2') format('woff2'),
+         url('robotocondensed-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_condensedregular';
+    src: url('robotocondensed-regular-webfont.eot');
+    src: url('robotocondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('robotocondensed-regular-webfont.woff2') format('woff2'),
+         url('robotocondensed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CopyrightHouseIndustries';
+    src: url('fonts/CopyrightHouseIndustries.eot');
+    src: url('fonts/CopyrightHouseIndustries.eot') format('embedded-opentype'),
+         url('fonts/CopyrightHouseIndustries.woff2') format('woff2'),
+         url('fonts/CopyrightHouseIndustries.woff') format('woff'),
+         url('fonts/CopyrightHouseIndustries.ttf') format('truetype'),
+         url('fonts/CopyrightHouseIndustries.svg#CopyrightHouseIndustries') format('svg');
+}
+
+@mixin RobotoCondensed($weight: normal) {
+  @if ($weight == normal) {
+    font-family: 'roboto_condensedregular';
+  }
+  @if ($weight == light) {
+    font-family: 'roboto_condensedlight';
+  }
+}
+
+@mixin CopyrightHouse {
+  font-family: 'CopyrightHouseIndustries';
+}
