@@ -1,0 +1,34 @@
+.footer {
+  min-height: 70px;
+  background-color: #333333;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+  }
+}
+
+.footer__address, .footer__phone, .footer__author {
+  @include RobotoCondensed(light);
+  color: $white;
+  font-size: 18px;
+}
+
+.footer__phone, .footer__author-link {
+  text-decoration: none;
+  color: $white;
+}
+
+.footer__nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+}
+
+.footer__nav-link {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+}

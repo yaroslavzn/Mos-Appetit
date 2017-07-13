@@ -1,0 +1,141 @@
+.features {
+  padding-bottom: 60px;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__item {
+  max-width: 260px;
+  min-height: 390px;
+  position: relative;
+  transition: all 0.2s;
+  &:hover {
+    .features__item-over {
+      opacity: 1;
+    }
+  }
+}
+
+.features__item-over {
+  background-color: rgba($green, .5);
+  min-height: 390px;
+  max-width: 260px;
+  padding: 10px;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.features__item-pic {
+  max-width: 125px;
+  margin: 0 auto;
+}
+
+.features__item-img {
+  width: 100%;
+}
+
+.features__item-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.features__item-desc {
+  max-width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  color: $white;
+  @include CopyrightHouse();
+  line-height: 30px;
+}
+
+.features__item1 {
+  background-image: url('../img/features1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 130px;
+    background-color: $orange;
+    top: -5px;
+    left: -5px;
+  }
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 130px;
+    width: 5px;
+    background-color: $orange;
+    top: -5px;
+    left: -5px;
+  }
+}
+
+.features__item2 {
+  background-image: url('../img/features2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 130px;
+    background-color: $orange;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.features__item3 {
+  background-image: url('../img/features3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 130px;
+    background-color: $orange;
+    left: 50%;
+    top: -5px;
+    transform: translateX(-50%);
+  }
+}
+
+.features__item4 {
+  background-image: url('../img/features4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 130px;
+    background-color: $orange;
+    bottom: -5px;
+    right: -5px;
+  }
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 130px;
+    width: 5px;
+    background-color: $orange;
+    bottom: -5px;
+    right: -5px;
+  }
+}

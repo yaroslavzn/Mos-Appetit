@@ -1,0 +1,8 @@
+.features__item {
+  max-width: 260px;
+  min-height: 390px; }
+
+.features__item1 {
+  background-image: url("../img/features1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
