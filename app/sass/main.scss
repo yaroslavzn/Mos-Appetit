@@ -1,3 +1,4 @@
+@import "libs";
 @import "_misc/fonts";
 
 // adjustment variables
@@ -7,6 +8,7 @@ $body-font: 'roboto_condensedregular', sans-serif;
 //colors
 $white: #fff;
 $orange: #f35303;
+$green: #003935;
 $green: #003935;
 
 // layout
@@ -20,4 +22,4 @@ $green: #003935;
 @import "_sections/cook-menu";
 @import "_sections/order";
 @import "_sections/footer";
-@import "media"
+@import "_media";
