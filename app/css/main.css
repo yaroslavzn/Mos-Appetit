@@ -1468,6 +1468,8 @@ section {
     .header__desc-item:last-child {
       margin-bottom: 0px; }
   /* Statistic */
+  .statistic {
+    padding-top: 20px; }
   .statistic__list {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
