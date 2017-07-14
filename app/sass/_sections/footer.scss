@@ -24,10 +24,24 @@
   }
 }
 
+.footer__address {
+  width: 24.56%;
+  letter-spacing: -0.3px;
+}
+
+.footer__phone {
+  width: 11%;
+}
+
 .footer__nav-list {
   display: flex;
-  justify-content: space-between;
-  width: 340px;
+  justify-content: space-around;
+  width: 33%;
+}
+
+.footer__author {
+  width: 17.54%;
+  letter-spacing: -0.2px;
 }
 
 .footer__nav-link {

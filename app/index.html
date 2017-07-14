@@ -96,8 +96,12 @@
 					</li>
 				</ul>
 				<form action="post" class="process__form">
-					<input type="text" placeholder="Ваше имя" class="process__form-input">
-					<input type="tel" placeholder="Номер телефона" class="process__form-input">
+					<div class="input-wrap input-wrap--text">
+						<input type="text" placeholder="Ваше имя" class="process__form-input">
+					</div>
+					<div class="input-wrap input-wrap--tel">
+						<input type="tel" placeholder="Номер телефона" class="process__form-input">
+					</div>
 					<div class="btn-wrap">
 						<button type="button" class="btn btn--process">Обратный звонок</button>
 					</div>
@@ -157,7 +161,7 @@
 		</section>
 		<section class="cook">
 			<div class="container">
-				<h2 class="section-title">Наше меню</h2>
+				<h2 class="section-title section-title--cook">Наше меню</h2>
 				<div class="cook-wrap">
 					<ul class="cook__list">
 						<li class="cook__item cook__item--active"><a href="#" class="cook__link cook__link--snack">Закуски</a></li>
@@ -173,7 +177,7 @@
 					<ul class="cook__content-list">
 						<li class="cook__content-item cook__content-item--active">
 							<ul class="cook__sub-list">
-								<li class="cook__sub-item">1Салат Цезарь <span class="sub-item--smaller">(курица, салат айсберг, помидоры черри, сыр пармезан, гренки,соус) 150гр.</span></li>
+								<li class="cook__sub-item">Салат Цезарь <span class="sub-item--smaller">(курица, салат айсберг, помидоры черри, сыр пармезан, гренки,соус) 150гр.</span></li>
 								<li class="cook__sub-item">Сациви из баклажан <span class="sub-item--smaller">(курица, салат айсберг, помидоры черри, гренки,соус) 150гр.</span></li>
 								<li class="cook__sub-item">Салат из сельдиь <span class="sub-item--smaller">(салат айсберг, помидоры черри, сыр пармезан, гренки,соус) 150гр.</span></li>
 								<li class="cook__sub-item">Салат крабовый <span class="sub-item--smaller">(курица, помидоры черри, помидоры черри,помидоры черри, сыр
@@ -351,8 +355,8 @@
 				<h2 class="section-title section-title--contrast section-title--smaller">Закажи бесплатный пробный обед прямо сейчас!</h2>
 				<div class="order-content">
 					<form action="post" class="order-form">
-						<input type="text" placeholder="Ваше имя">
-						<input type="tel" placeholder="Номер телефона">
+						<input type="text" placeholder="Ваше имя" class="order-form__input">
+						<input type="tel" placeholder="Номер телефона" class="order-form__input">
 						<button type="button" class="btn btn--order">Перезвоните мне</button>
 					</form>
 					<div class="order__text">

@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 .section-title {
@@ -48,7 +48,7 @@ section {
   color: $white;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 7px;
 }
 
 .section-title--contrast {
@@ -57,4 +57,5 @@ section {
 
 .section-title--smaller {
   font-size: 48px;
+  margin-bottom: 12px;
 }

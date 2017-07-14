@@ -1,10 +1,15 @@
 .cook {
-  min-height: 640px;
+  min-height: 645px;
   background-image: url('../img/cook.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding-bottom: 60px;
+  padding-top: 10px;
+}
+
+.section-title--cook {
+  margin-bottom: 18px;
 }
 
 .cook-wrap {
@@ -13,7 +18,7 @@
 }
 
 .cook__list {
-  width: 22.8%;
+  width: 23%;
 }
 
 .cook__item {
@@ -27,7 +32,7 @@
   text-transform: uppercase;
   color: $white;
   border-radius: 5px;
-  padding: 5px 5px 5px 68px;
+  padding: 3px 5px 3px 68px;
   background-repeat: no-repeat;
   background-position: 10px center;
   display: block;
@@ -82,15 +87,15 @@
 }
 
 .cook__content-list {
-  width: 74.12%;
+  width: 74.22%;
 }
 
 .cook__content-item {
-  height: 476px;
+  height: 440px;
   background-color: rgba($white, .5);
   display: none;
   overflow: auto;
-  padding: 10px;
+  padding: 13px 10px;
   &::-webkit-scrollbar {
     width: 20px;
     background-color: rgba($white, .5);
@@ -111,7 +116,7 @@
   font-size: 36px;
   line-height: 30px;
   color: $green;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .sub-item--smaller {
