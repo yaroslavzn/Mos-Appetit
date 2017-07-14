@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     min-height: 70px;
   }
 }
@@ -18,6 +19,9 @@
 .footer__phone, .footer__author-link {
   text-decoration: none;
   color: $white;
+  &:hover {
+    color: #2b8bb6;
+  }
 }
 
 .footer__nav-list {
@@ -31,4 +35,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $white;
+  &:hover {
+    color: #2b8bb6;
+  }
 }

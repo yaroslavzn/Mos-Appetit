@@ -5,3 +5,21 @@
   background-size: cover;
   background-position: center;
 }
+
+.cook-menu__list {
+  width: 22.8%;
+}
+
+.cook-menu__item {
+  background-color: $green;
+  margin-bottom: 10px;
+  @include RobotoCondensed(light);
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $white;
+  border-radius: 5px;
+  padding: 5px 5px 5px 68px;
+  background-image: url('../img/cook1.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}

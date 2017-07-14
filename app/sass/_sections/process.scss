@@ -13,10 +13,18 @@
 .process__list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .process__item {
-  max-width: 200px;
+  width: 200px;
+  &:last-child {
+    .process__elipse {
+      &::after {
+        display: none;
+      }
+    }
+  }
 }
 
 .process__elipse {
@@ -46,29 +54,40 @@
     top: 0;
     margin-top: -30px;
   }
+  &::after {
+    display: block;
+    content: '';
+    height: 20px;
+    width: 110px;
+    background-color: $white;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
-.process__elipse--phone {
+.process__elipse--one {
   &::before {
     content: '1.'
   }
 }
 
-.process__elipse--cart {
+.process__elipse--two {
   &::before {
     content: '2.'
   }
 }
 
-.process__elipse--cart {
-  &::before {
-    content: '2.'
-  }
-}
-
-.process__elipse--clock {
+.process__elipse--three {
   &::before {
     content: '3.'
+  }
+}
+
+.process__elipse--four {
+  &::before {
+    content: '4.'
   }
 }
 
