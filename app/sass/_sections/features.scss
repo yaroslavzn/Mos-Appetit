@@ -1,5 +1,5 @@
 .features {
-  padding-bottom: 60px;
+  padding-bottom: 56px;
 }
 
 .features__list {
@@ -24,6 +24,7 @@
 .features__item-over {
   background-color: rgba($green, .5);
   padding: 10px;
+  padding-top: 15px;
   min-height: 392px;
   height: 100%;
   width: 100%;
@@ -53,8 +54,8 @@
     display: block;
     content: '';
     position: absolute;
-    left: 20px;
-    right: 20px;
+    left: 10px;
+    right: 10px;
     height: 1px;
     bottom: -11px;
     background-color: $white;

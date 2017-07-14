@@ -119,6 +119,10 @@
   padding: 0 15px;
 }
 
+.statistic {
+  padding: 0 0 8px;
+}
+
 .statistic__list {
   display: flex;
   justify-content: space-between;
@@ -134,7 +138,7 @@
   @include CopyrightHouse();
   font-size: 100px;
   line-height: 100px;
-  margin-bottom: 10px;
+  margin-top: -10px;
   color: $orange;
   display: block;
 }
