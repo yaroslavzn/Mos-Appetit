@@ -3,7 +3,7 @@
   padding-bottom: 25px;
   background-image: url('../img/orange.png');
   background-repeat: no-repeat;
-  background-position: right 100px;
+  background-position: right bottom;
 }
 
 .order-content {
@@ -28,7 +28,7 @@
     width: 100%;
     margin-bottom: 20px;
     padding: 2px 20px;
-    color: #c9c9c9;
+    // color: #c9c9c9;
     border-radius: 5px;
     &::placeholder {
       color: #c9c9c9;
