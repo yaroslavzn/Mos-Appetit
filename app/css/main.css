@@ -15,6 +15,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
+@import url(../libs/font-awesome/css/font-awesome.min.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -389,6 +390,13 @@ th {
   font-family: 'CopyrightHouseIndustries';
   src: url("../fonts/CopyrightHouseIndustries.eot");
   src: url("../fonts/CopyrightHouseIndustries.eot") format("em../bedded-opentype"), url("../fonts/CopyrightHouseIndustries.woff2") format("woff2"), url("../fonts/CopyrightHouseIndustries.woff") format("woff"), url("../fonts/CopyrightHouseIndustries.ttf") format("truetype"), url("../fonts/CopyrightHouseIndustries.svg#CopyrightHouseIndustries") format("svg"); }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 /* adjustment vars */
 html {
@@ -1145,6 +1153,67 @@ section {
   color: #fff; }
   .footer__nav-link:hover {
     color: #2b8bb6; }
+
+.popup-over {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none; }
+
+.popup-over--active {
+  display: block; }
+
+.popup-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 100%; }
+
+.order-form--popup {
+  margin: 0 auto;
+  width: 400px;
+  position: relative; }
+
+.close-btn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: -30px; }
+  .close-btn::before {
+    display: block;
+    content: '';
+    background-color: #fff;
+    width: 2px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 14px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .close-btn::after {
+    display: block;
+    content: '';
+    background-color: #fff;
+    width: 2px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 14px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
 
 @media (max-width: 1170px) {
   /* Process */

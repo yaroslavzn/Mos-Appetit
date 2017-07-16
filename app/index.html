@@ -21,7 +21,7 @@
 							<li class="nav__item"><a href="#" class="nav__link">Товары</a></li>
 							<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
 							<li class="nav__item"><a href="tel:380967185747" class="nav__link nav__link--tel">+38-(096)-718-57-47</a></li>
-							<li class="nav__item"><a href="#" class="nav__link btn">Обратный звонок</a></li>
+							<li class="nav__item"><a href="#" class="nav__link btn open-btn">Обратный звонок</a></li>
 	  				</ul>
 						<div class="burger">
 							<span class="burger__line burger__line--first"></span>
@@ -394,7 +394,16 @@
 			<span class="footer__author">Сайт разработан <a href="#" class="footer__author-link">forinter.net</a></span>
 		</div>
 	</footer>
-	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  	<div class="popup-over">
+		<div class="popup-wrap">
+			<form action="post" class="order-form order-form--popup">
+				<input type="text" placeholder="Ваше имя" class="order-form__input">
+				<input type="tel" placeholder="Номер телефона" class="order-form__input">
+				<button type="button" class="btn btn--order">Перезвоните мне</button>
+				<button class="close-btn" type="button"></button>
+			</form>
+		</div>
+	</div>
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>

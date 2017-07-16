@@ -27,4 +27,21 @@ $(document).ready(function(){
     menu.toggleClass('nav__list--active');
     menuBtn.toggleClass('burger--active');
   });
+
+//  Popup
+
+    var popupCloseBtn = $('.close-btn');
+    var popupOpenBtn = $('.open-btn');
+    var popup = $('.popup-over');
+
+
+    popupCloseBtn.on('click', function (e) {
+        e.preventDefault();
+        popup.removeClass('popup-over--active');
+    })
+
+    popupOpenBtn.on('click', function (e) {
+        e.preventDefault();
+        popup.addClass('popup-over--active');
+    })
 });
